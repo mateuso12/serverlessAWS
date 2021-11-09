@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "sharp": "^0.29.2"
+  },
+  "name": "nodeless",
+  "version": "1.0.0",
+  "main": "optimize.js",
+  "devDependencies": {},
+  "scripts": {
+    "predeploy": "npm uninstall sharp && npm install --platform=linux --arch=x64 --target:14.4.0 sharp",
+    "deploy": "serverless deploy",
+    "postdeploy": "npm uninstall sharp && npm install sharp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
